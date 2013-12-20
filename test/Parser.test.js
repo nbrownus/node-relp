@@ -384,10 +384,3 @@ describe('Parser', function () {
     })
 
 })
-//
-//    707 + 2 + 23 + 2 + 214
-//<13>2013-12-20T04:50:40.765079+00:00 next02 betable-id-4: @cee: {"@request_id":"rV_3bP5lkgmPAAh3_XCB3o","_type":"http","duration":535,"http":{"version":"1.1","request":{"method":"POST","url":"/account","version":"1.1","headers":{"host":"next.api.betable.com","connection":"close","content-length":"109","x-forwarded-for":"46.38.190.206","authorization":"Basic UWk3WTRRdEdPbk5rdUlyeXJES29ueXBBZ1RpeW9vTmY6RTl6V29kcG1GTlVITWw2T1NLSEpvMlNSR0h3YTRKd1I= (client_id: Qi7Y4QtGOnNkuIryrDKonypAgTiyooNf)","content-type":"application/json; charset=utf8","x-betable-access-token":"YV4widNurlLKhBrr6fIBv4TW8gM","x-x-forwarded-for":"127.0.0.1"},"body":"{\"email\":\"test-aLJdTpddjVLFz17v@betable.com\",\"first_name\":\"F
-//í
-//rst\",\"last_name\":\"L
-//á
-//st\",\"password\":\"REDACTED\"}"},"response":{"status":200,"reason":"OK","body":"{\"access_token\":\"Sv5RHmBcS69Zn0M8upTOLx81c69\",\"token_type\":\"Cookie\"}"}},"@message":"POST /account HTTP/1.1\nHTTP/1.1 200 OK"}

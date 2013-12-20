@@ -1,3 +1,10 @@
+/*
+ * Simple example showing how to create a RELP server
+ * All messages received are logged and ack'd
+ *
+ * There is a hook on the socket write to show you what is being written back to the client
+ */
+
 var Server = require('../lib/Server')
 
 var server = new Server({ port: '4981' })
