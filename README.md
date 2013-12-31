@@ -31,6 +31,5 @@ Provided by [ppunit](https://github.com/nbrownus/ppunit) and [istanbul](https://
 ### TODO
 
 - Build a RELP client
-- Catch parse errors and disconnect the server
+- Make sure to test parse errors/trying to syslog before open closes the socket
 - Ensure transaction id increments monotonically and disconnect if not
-- Fix socket id stuff, using array index is borked
