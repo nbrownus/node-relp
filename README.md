@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nbrownus/node-relp-lib.png?branch=master)](https://travis-ci.org/nbrownus/node-relp-lib)
+[![Build Status](https://travis-ci.org/nbrownus/node-relp.png?branch=master)](https://travis-ci.org/nbrownus/node-relp)
 
 Implements the RELP protocol for use in node projects
 

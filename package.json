@@ -1,5 +1,5 @@
 {
-    "name": "relp-lib"
+    "name": "relp"
   , "version": "0.0.1"
   , "description": "Library that implements the RELP protocol"
   , "keywords": [
@@ -14,7 +14,7 @@
     }
   , "repository": {
         "type": "git"
-      , "url": "https://github.com/nbrownus/node-relp-lib"
+      , "url": "https://github.com/nbrownus/node-relp"
     }
   , "main": "./index"
   , "license": "MIT"
