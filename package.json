@@ -1,6 +1,6 @@
 {
     "name": "relp"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "Library that implements the RELP protocol"
   , "keywords": [
         "relp"
