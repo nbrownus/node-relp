@@ -1,7 +1,6 @@
-var Parser = require('../lib/Parser')
-  , Message = require('../lib/Message')
-  , should = require('should')
-  , nextTick = process.nextTick
+var Parser = require('../lib/Parser'),
+    Message = require('../lib/Message'),
+    should = require('should')
 
 describe('Parser', function () {
 
@@ -300,19 +299,17 @@ describe('Parser', function () {
     })
 
     describe('Consuming', function () {
-        afterEach(function () {
-            process.nextTick = nextTick
-        })
 
         it('Should append to the buffer on each call to consume', function (done) {
-            var parser = new Parser()
-              , deserializeCalled = 0
+            var parser = new Parser(),
+                deserializeCalled = 0
 
             parser.deserialize = function (buffer) {
                 deserializeCalled++
 
                 if (deserializeCalled == 1) {
                     buffer.toString().should.equal('1', 'First consume call; buffer value is wrong')
+                    parser.consume(new Buffer('2'))
                 } else if (deserializeCalled == 2) {
                     buffer.toString().should.equal('12', 'Second consume call; buffer value is wrong')
                     done()
@@ -323,12 +320,7 @@ describe('Parser', function () {
                 return { complete: false, position: 0 }
             }
 
-            process.nextTick = function (func) {
-                func()
-            }
-
             parser.consume(new Buffer('1'))
-            parser.consume(new Buffer('2'))
         })
 
         it('Should emit a message event on a completed message', function (done) {

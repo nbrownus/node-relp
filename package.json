@@ -1,32 +1,32 @@
 {
-    "name": "relp"
-  , "version": "0.0.2"
-  , "description": "Library that implements the RELP protocol"
-  , "keywords": [
-        "relp"
-      , "rsyslog"
-      , "logs"
-      , "logging"
-    ]
-  , "author": {
-        "name": "Nathan Brown"
-      , "email": "nbrown.us@gmail.com"
-    }
-  , "repository": {
-        "type": "git"
-      , "url": "https://github.com/nbrownus/node-relp"
-    }
-  , "main": "./index"
-  , "license": "MIT"
-  , "engines": {
-        "node": ">= 0.8.x"
-    }
-  , "scripts": {
+    "name": "relp",
+    "version": "0.1.0",
+    "description": "Library that implements the RELP protocol",
+    "keywords": [
+        "relp",
+        "rsyslog",
+        "logs",
+        "logging"
+    ],
+    "author": {
+        "name": "Nathan Brown",
+        "email": "nbrown.us@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nbrownus/node-relp"
+    },
+    "main": "./index",
+    "license": "MIT",
+    "engines": {
+        "node": ">= 0.10.x"
+    },
+    "scripts": {
         "test": "make test"
-    }
-  , "devDependencies": {
-        "istanbul": "0.1.x"
-      , "ppunit": "x"
-      , "should": "2.x"
+    },
+    "devDependencies": {
+        "istanbul": "0.1.x",
+        "ppunit": "x",
+        "should": "2.x"
     }
 }
