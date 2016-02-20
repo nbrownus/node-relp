@@ -1,6 +1,6 @@
 {
     "name": "relp",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Library that implements the RELP protocol",
     "keywords": [
         "relp",
@@ -25,8 +25,8 @@
         "test": "make test"
     },
     "devDependencies": {
-        "istanbul": "0.1.x",
+        "istanbul": "0.4.x",
         "ppunit": "x",
-        "should": "2.x"
+        "should": "7.1.x"
     }
 }
