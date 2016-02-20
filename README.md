@@ -2,6 +2,8 @@
 
 Implements the RELP protocol for use in node projects
 
+- Supports [PROXY protocol](http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt)
+
 [RELP Protocol](http://www.rsyslog.com/doc/relp.html)
 
 [rsyslog Homepage](http://www.rsyslog.com)
