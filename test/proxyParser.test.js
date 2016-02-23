@@ -13,8 +13,8 @@ describe('proxyParser', function () {
             clientIp: '10.7.254.51',
             clientPort: '45219',
             protocol: 'TCP4',
-            proxyForIp: '10.0.30.19',
-            proxyForPort: '5515'
+            proxyIp: '10.0.30.19',
+            proxyPort: '5515'
         })
     })
 
