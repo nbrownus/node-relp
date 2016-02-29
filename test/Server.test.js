@@ -31,4 +31,34 @@ describe('Server', function () {
         it('Should setup the server to listen for connections')
 
     })
+
+    describe('nack', function () {
+
+        it('Should have a sane default error message', function (done) {
+            var server = new Server()
+
+            server.ack = function (message, data, close) {
+                message.should.eql('message')
+                data.should.eql('500 Error')
+                close.should.eql(false)
+                done()
+            }
+
+            server.nack('message', void 0, false)
+        })
+
+        it('Should use the error message passed in', function (done) {
+            var server = new Server()
+
+            server.ack = function (message, data, close) {
+                message.should.eql('message')
+                data.should.eql('500 Crazy error')
+                close.should.eql(true)
+                done()
+            }
+
+            server.nack('message', 'Crazy error', true)
+        })
+
+    })
 })
