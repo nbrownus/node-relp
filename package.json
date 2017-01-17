@@ -24,6 +24,9 @@
     "scripts": {
         "test": "make test"
     },
+    "dependencies": {
+        "utils-error-to-json": "1.0.x"
+    },
     "devDependencies": {
         "istanbul": "0.4.x",
         "ppunit": "x",
